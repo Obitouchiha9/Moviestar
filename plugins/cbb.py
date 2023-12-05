@@ -1,4 +1,5 @@
 #(©)Codexbotz
+#Recoded By @ItsMadaraUchiha
 
 from pyrogram import __version__
 from bot import Bot
@@ -10,12 +11,13 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://us",
+            
+            text =  f"<b>○ Language : <code>Python3</code>\nâ—‹ Channel : @All_Movie_Star\nâ—‹ Backup Channel: @Movie_star_backup</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
+                        InlineKeyboardButton("☠️ Close ☠️", callback_data = "close")
                     ]
                 ]
             )
